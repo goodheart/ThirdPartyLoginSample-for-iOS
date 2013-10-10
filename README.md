@@ -1,4 +1,4 @@
 SinaWeiboLoginDemo-for-iOS
 ==========================
 
-使用ShareSDK iOS版本实现第三方登录演示。
+Use ShareSDK implement third-party login demonstration.
