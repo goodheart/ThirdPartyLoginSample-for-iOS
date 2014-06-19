@@ -32,6 +32,8 @@
     loginBtn.frame = CGRectMake((self.view.frame.size.width - 173.0) / 2, (self.view.frame.size.height - 32.0) / 2, 173.0, 32.0);
     loginBtn.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
     [loginBtn addTarget:self action:@selector(loginBtnClickHandler:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     [self.view addSubview:loginBtn];
 }
 
@@ -52,10 +54,16 @@
 {
     [ShareSDK getUserInfoWithType:ShareTypeSinaWeibo
                       authOptions:nil
-                           result:^(BOOL result, id<ISSUserInfo> userInfo, id<ICMErrorInfo> error) {
+                           result:^(BOOL result, id<ISSPlatformUser> userInfo, id<ICMErrorInfo> error) {
                                
                                if (result)
                                {
+                                   NSLog(@"uid = %@",[userInfo uid]);
+                                   NSLog(@"name = %@",[userInfo nickname]);
+                                   NSLog(@"icon = %@",[userInfo profileImage]);
+                                   
+                                   //将信息保存到parse上
+
                                    PFQuery *query = [PFQuery queryWithClassName:@"UserInfo"];
                                    [query whereKey:@"uid" equalTo:[userInfo uid]];
                                    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -65,7 +73,7 @@
                                            PFObject *newUser = [PFObject objectWithClassName:@"UserInfo"];
                                            [newUser setObject:[userInfo uid] forKey:@"uid"];
                                            [newUser setObject:[userInfo nickname] forKey:@"name"];
-                                           [newUser setObject:[userInfo icon] forKey:@"icon"];
+                                           [newUser setObject:[userInfo profileImage] forKey:@"icon"];
                                            [newUser saveInBackground];
                                            
                                            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello" message:@"欢迎注册" delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles: nil];
