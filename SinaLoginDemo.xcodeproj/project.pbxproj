@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36CE9BC11BBA93B7003028A3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE9BC01BBA93B7003028A3 /* libsqlite3.tbd */; };
+		36CE9BC31BBA93BF003028A3 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE9BC21BBA93BF003028A3 /* libz.1.2.5.tbd */; };
 		4185AB9418063EB9000D8FFE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4185AB9318063EB9000D8FFE /* Parse.framework */; };
 		4290FAB81952AFAE005F61FB /* CopyConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290FA661952AFAD005F61FB /* CopyConnection.framework */; };
 		4290FAB91952AFAF005F61FB /* DouBanConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290FA671952AFAD005F61FB /* DouBanConnection.framework */; };
@@ -101,6 +103,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36CE9BC01BBA93B7003028A3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		36CE9BC21BBA93BF003028A3 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		4185AB9318063EB9000D8FFE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		4290FA661952AFAD005F61FB /* CopyConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CopyConnection.framework; sourceTree = "<group>"; };
 		4290FA671952AFAD005F61FB /* DouBanConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DouBanConnection.framework; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CE9BC31BBA93BF003028A3 /* libz.1.2.5.tbd in Frameworks */,
+				36CE9BC11BBA93B7003028A3 /* libsqlite3.tbd in Frameworks */,
 				A86E451317C0F27000AFCA04 /* StoreKit.framework in Frameworks */,
 				4290FADE1952AFAF005F61FB /* Pinterest.framework in Frameworks */,
 				4290FAC51952AFAF005F61FB /* PinterestConnection.framework in Frameworks */,
@@ -500,6 +506,8 @@
 		A86E447317C0EDB800AFCA04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36CE9BC21BBA93BF003028A3 /* libz.1.2.5.tbd */,
+				36CE9BC01BBA93B7003028A3 /* libsqlite3.tbd */,
 				A86E447417C0EDB800AFCA04 /* UIKit.framework */,
 				A86E447617C0EDB800AFCA04 /* Foundation.framework */,
 				A86E447817C0EDB800AFCA04 /* CoreGraphics.framework */,

@@ -63,7 +63,7 @@
                                    NSLog(@"icon = %@",[userInfo profileImage]);
                                    
                                    //将信息保存到parse上
-
+#if 0
                                    PFQuery *query = [PFQuery queryWithClassName:@"UserInfo"];
                                    [query whereKey:@"uid" equalTo:[userInfo uid]];
                                    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -87,7 +87,7 @@
                                            [alertView release];
                                        }
                                    }];
-                                   
+#endif
                                    MainViewController *mainVC = [[[MainViewController alloc] init] autorelease];
                                    [self.navigationController pushViewController:mainVC animated:YES];
                                    

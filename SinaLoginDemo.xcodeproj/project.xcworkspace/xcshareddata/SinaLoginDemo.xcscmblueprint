@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C866F926395F5C115AC5F6C67AA215650EF46FCA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C866F926395F5C115AC5F6C67AA215650EF46FCA" : 0,
+    "A4D7DB7936D18F8797892B0805F0623344CBAEBE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B731A87C-FCED-418F-A2E8-3123667F233E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C866F926395F5C115AC5F6C67AA215650EF46FCA" : "thirdPartyLogin\/",
+    "A4D7DB7936D18F8797892B0805F0623344CBAEBE" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SinaLoginDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SinaLoginDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:goodheart\/firstDemo123.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A4D7DB7936D18F8797892B0805F0623344CBAEBE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/goodheart\/ThirdPartyLoginSample-for-iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C866F926395F5C115AC5F6C67AA215650EF46FCA"
+    }
+  ]
+}
